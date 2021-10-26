@@ -19,10 +19,10 @@ def _get_part_of_day():
 
 
 class Greeter:
-    def __init__(self, name):
+    def __init__(self, name: str):
         self.name = name
 
-    def greet(self, store):
+    def greet(self, store: str):
         day = _get_day()
         part_of_day = _get_part_of_day()
         print(f"Hello, my name is {self.name}.\n"
